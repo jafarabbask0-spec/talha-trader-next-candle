@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="good.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/ynRT2dCb/IMG-20260128-161044-427.jpg" type="image/x-icon">
+    <title>TALHA TRADER BOT</title>
+</head>
+<body>
+    <div id="doc__wrapper">
+        <div style="text-align: center; padding-top: 2rem;">
+            <img src="https://i.ibb.co/ynRT2dCb/IMG-20260128-161044-427.jpg" alt="Logo" style="width: 100px; border-radius: 50%; border: 2px solid maroon;">
+        </div>
+
+        <div id="title">TALHA TRADER</div>
+        
+        <div id="content__wrapper">
+            <div class="uploader">
+                <p style="color: #ccc; font-size: 12px; margin-bottom: 8px; text-align: left; padding-left: 5px;">SELECT TRADE TIME</p>
+                <div class="selector" id="timeSelector">
+                    <button onclick="toggleOptions()"><span id="timeLabel">01 Min</span></button>
+                    <div class="selector-options" id="timeOptions">
+                        <div onclick="selectOption('05 Sec', 5)">05 Sec</div>
+                        <div onclick="selectOption('10 Sec', 10)">10 Sec</div>
+                        <div onclick="selectOption('15 Sec', 15)">15 Sec</div>
+                        <div onclick="selectOption('30 Sec', 30)">30 Sec</div>
+                        <div onclick="selectOption('01 Min', 60)">01 Min</div>
+                        <div onclick="selectOption('02 Min', 120)">02 Min</div>
+                        <div onclick="selectOption('05 Min', 300)">05 Min</div>
+                    </div>
+                </div>
+
+                <label class="upload-btn" id="uploadBtn" for="fileInput">Upload Chart</label>
+                <input type="file" id="fileInput" accept="image/*">
+                
+                <div class="progress-bar" id="progressBar"><div></div></div>
+                <div class="preview" id="preview"></div>
+                <div id="timerDisplay"></div>
+            </div>
+        </div>
+    </div>
+    <script src="good.js"></script>
+</body>
+</html>

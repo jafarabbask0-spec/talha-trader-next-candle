@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#doc__wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url('https://i.ibb.co/ynRT2dCb/IMG-20260128-161044-427.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    color: #ffffff; /* Text White */
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(128, 0, 0, 0.8); /* Maroon Glow */
+    margin-bottom: 10px;
+}
+
+#content__wrapper {
+    width: 90%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Time Selector Styling */
+.selector { position: relative; margin-bottom: 20px; }
+.selector button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid maroon; /* Border Maroon */
+    color: #ffffff; /* Text White */
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.selector-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #181a20;
+    border: 1px solid maroon; /* Border Maroon */
+    border-radius: 10px;
+    z-index: 999;
+    top: 100%;
+    margin-top: 5px;
+}
+
+.selector-options div {
+    padding: 10px 15px;
+    color: #ffffff; /* Text White */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.selector-options div:hover { 
+    background: maroon; /* Hover Background Maroon */
+    color: #ffffff; 
+}
+
+/* Hide default file button */
+input[type="file"] {
+    display: none !important;
+}
+
+.upload-btn {
+    display: block;
+    padding: 15px;
+    color: #ffffff; /* Text White */
+    background: maroon; /* Button Maroon */
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(128, 0, 0, 0.4);
+}
+
+.upload-btn.disabled {
+    background: #444 !important;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.progress-bar {
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+.progress-bar div { 
+    height: 100%; 
+    width: 0%; 
+    background: #800000; /* Progress bar bhi maroon kar diya */
+    transition: 0.1s linear; 
+}
+
+#timerDisplay { 
+    margin-top: 15px; 
+    text-align: center; 
+    font-family: monospace; 
+    color: #ffffff; /* Timer text White */
+}
