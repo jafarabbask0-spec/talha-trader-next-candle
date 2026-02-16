@@ -6,11 +6,11 @@
     const waIcon = "https://www.freeiconspng.com/thumbs/logo-whatsapp-png/logo-whatsapp-png-pic-0.png";
     
     // =================== 2. 20-DIGIT UNIQUE ID GENERATION ===================
-    let myUID = localStorage.getItem('ahmad_script_uid');
+    let myUID = localStorage.getItem('talha_script_uid');
     if (!myUID) {
         // Generates a proper 20-digit random numeric ID
         myUID = Array.from({length: 20}, () => Math.floor(Math.random() * 10)).join('');
-        localStorage.setItem('ahmad_script_uid', myUID);
+        localStorage.setItem('talha_script_uid', myUID);
     }
 
     // =================== 3. TALHA DATABASE VERIFICATION ===================
@@ -62,6 +62,11 @@
                         <img src="${teleIcon}" style="width: 24px; margin-right: 12px;">
                         <a href="https://t.me/TALHATRADER3" style="text-decoration:none; color:#0088cc; font-size:15px; font-weight:bold;">@TalhaTrader3</a>
                     </div>
+        <div style="text-align: left; padding: 0 5px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <img src="${teleIcon}" style="width: 24px; margin-right: 12px;">
+                        <a href="https://t.me/Talha_Trader3" style="text-decoration:none; color:#0088cc; font-size:15px; font-weight:bold;">@Talha_Trader3</a>
+                    </div>
 
                     <div style="display: flex; align-items: center; margin-bottom: 15px;">
                         <img src="${waIcon}" style="width: 24px; margin-right: 12px;">
@@ -70,7 +75,7 @@
                 </div>
 
                 <button onclick="location.reload()" style="margin-top: 25px; width: 100%; background: #000; color: white; border: none; padding: 15px; border-radius: 15px; font-weight: bold; cursor: pointer; transition: 0.3s;">RETRY ACCESS</button>
-                <div style="margin-top: 15px; font-size: 11px; color: #94a3b8;">SYSTEM BY AHMAD BHAI</div>
+                <div style="margin-top: 15px; font-size: 11px; color: #94a3b8;">SYSTEM BY TALHA BHAI</div>
             </div>
         `;
         document.body.appendChild(overlay);
@@ -137,8 +142,8 @@
             const isCall = Math.random() > 0.5;
             const signal = isCall ? 'CALL' : 'PUT';
             const scriptUrl = isCall 
-                ? "https://ahmad-bhai-next-candle-bot.netlify.app/candle-green.js" 
-                : "https://ahmad-bhai-next-candle-bot.netlify.app/candle-red.js";
+                ? "candle-green.js" 
+                : "candle-red.js";
             const color = isCall ? '#00ff44' : '#ff3a3a';
 
             progressBar.style.display = 'none';
