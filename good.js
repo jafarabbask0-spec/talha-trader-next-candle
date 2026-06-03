@@ -1,6 +1,6 @@
 (function() {
     // =================== 1. TALHA FIREBASE CONFIG ===================
-    const dbURL = "https://talha-admin-panel-default-rtdb.firebaseio.com/users.json";
+    const dbURL = "https://talha-trader-admin-panel-lock-default-rtdb.firebaseio.com/users.json";
     const mainLogo = "https://i.ibb.co/HTB34WrY/20260128-162554.png";
     const teleIcon = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png";
     const waIcon = "https://www.freeiconspng.com/thumbs/logo-whatsapp-png/logo-whatsapp-png-pic-0.png";
